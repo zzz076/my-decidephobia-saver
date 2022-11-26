@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap");
+:root {
+  --light-grey-color: rgb(225, 220, 217);
+  --dark-grey-color: rgb(143, 134, 129);
+  --lingt-pink-color: rgb(166, 127, 120);
+  --main-color: rgb(65, 65, 67);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Noto Sans TC", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+.app {
+  height: 100%;
+  min-height: 100vh;
+  background: var(--light-grey-color);
+  color: var(--main-color);
+}
+
+.result-container {
+  width: 100%;
+  max-width: 1068px;
+  height: 100%;
+  min-height: 40vh;
+  text-align: center;
+  padding: 2rem;
+  margin: 0 auto;
+}
+.result-container .result-title {
+  font-size: 3.8rem;
+  font-weight: bold;
+}
+.result-container .result-input {
+  width: 100%;
+  font-size: 3.4rem;
+  margin: 1rem;
+}
+.result-container .result-btns .result-btn {
+  padding: 1rem 1.5rem;
+  font-size: 1.2rem;
+  outline: none;
+  background-color: var(--main-color);
+  color: var(--light-grey-color);
+  margin: 1rem;
+}
+
+.database-container {
+  width: 100%;
+  max-width: 1068px;
+  height: 100%;
+  min-height: 55vh;
+  margin: 0 auto;
+}
+.database-container .database-tags {
+  display: flex;
+}
+.database-container .database-tags .database-tag {
+  background-color: var(--dark-grey-color);
+  padding: 0.5rem;
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: var(--light-grey-color);
+}
+.database-container .database {
+  border: 1px solid var(--main-color);
+  height: 100%;
+  min-height: 55vh;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+  gap: 1rem;
+  grid-template-rows: repeat(auto-fit, minmax(180px, 1fr));
+  padding: 1rem;
+}
+.database-container .database .data {
+  border: 3px solid #3f403f;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+}
+.database-container .database .data .data-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.database-container .database .data .data-top .data-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.database-container .database .data .data-top .data-delete {
+  cursor: pointer;
+  font-size: 1.1rem;
+  color: rgba(207, 1, 1, 0.4);
+  transition: all 0.2s ease-in-out;
+}
+.database-container .database .data .data-top .data-delete:hover {
+  color: rgba(207, 1, 1, 0.99);
+}
+.database-container .database .data .data-item {
+  outline: none;
+  background-color: var(--light-grey-color);
+  border: none;
+  width: 100%;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.database-container .database .data .data-vote-result {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.database-container .database .data .data-votes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.database-container .database .data .data-votes .data-vote-btns .data-vote-btn {
+  padding: 0.1rem;
+  background-color: var(--dark-grey-color);
+  color: var(--light-grey-color);
+  border: 0;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in-out;
+}
+.database-container .database .data .data-votes .data-vote-btns .data-vote-plus-btn:hover {
+  color: #80ada0;
+  background-color: #3f403f;
+}
+.database-container .database .data .data-votes .data-vote-btns .data-vote-minus-btn:hover {
+  color: #b79492;
+  background-color: #3f403f;
+}
+
+.new-data {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+}
+.new-data .new-data-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.new-data .new-data-title {
+  color: var(--lingt-pink-color);
+  font-weight: bold;
+}
+.new-data .new-data-item {
+  outline: none;
+  background-color: var(--light-grey-color);
+  border: none;
+  width: 80%;
+  font-size: 1.5rem;
+  border-bottom: 1px solid var(--dark-grey-color);
+}
+.new-data .new-data-btns {
+  display: flex;
+  justify-content: flex-end;
+}
+.new-data .new-data-btns .new-data-add {
+  font-size: 1rem;
+  padding: 0.3rem;
+  font-weight: 600;
+  background-color: var(--dark-grey-color);
+  color: var(--light-grey-color);
+  border: 0;
+  transition: all 0.2s ease-in-out;
+}
+.new-data .new-data-btns .new-data-add:hover {
+  background-color: #3f403f;
+}/*# sourceMappingURL=all.css.map */
